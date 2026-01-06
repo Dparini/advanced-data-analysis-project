@@ -28,16 +28,16 @@
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 This project implements a **comprehensive survival analysis framework** to predict the probability and timing of exit events (IPO or acquisition) for VC-backed startups. Employing a **competing risks methodology** where IPO and M&A are treated as mutually exclusive terminal events, this research combines Crunchbase and Jay Ritter datasets to provide deep insights into startup lifecycle dynamics.
 
-### 🎯 Research Question
+### Research Question
 *How do various factors,  including funding characteristics, market conditions, network effects, and angel investment, influence the timing and probability of exit events for venture capital-backed startups in the United States?*
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 advanced-data-analysis-project/
@@ -67,7 +67,7 @@ advanced-data-analysis-project/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.13+
@@ -100,7 +100,7 @@ jupyter notebook modeling.ipynb                # 3. Models
 
 ---
 
-## 📊 Key Results
+## Key Results
 
 ### Dataset Overview
 
@@ -140,7 +140,7 @@ jupyter notebook modeling.ipynb                # 3. Models
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Data Integration
 - **Crunchbase**: 196K companies (1970-2013)
@@ -167,26 +167,26 @@ jupyter notebook modeling.ipynb                # 3. Models
 
 ---
 
-## 📈 Business Insights
+## Business Insights
 
 ### For VCs
-- 📊 Boom markets increase IPO probability by **42%**
-- 🏆 Hardware startups have highest IPO rates (**5.4%**)
-- 💰 Series B/C rounds reduce time-to-exit significantly
+-  Boom markets increase IPO probability by **42%**
+-  Hardware startups have highest IPO rates (**5.4%**)
+-  Series B/C rounds reduce time-to-exit significantly
 
 ### For Entrepreneurs
-- 💵 Log funding is strongest predictor
-- 🌐 Each additional relationship reduces hazard by **18%**
-- ⏰ Market timing matters for outcomes
+-  Log funding is strongest predictor
+-  Each additional relationship reduces hazard by **18%**
+-  Market timing matters for outcomes
 
 ### For Policymakers
-- 🗺️ Geographic clustering (CA, MA, NY) drives success
-- 🤝 Network connectivity correlates with regional success
-- 📉 IPO activity predicts economic trends
+-  Geographic clustering (CA, MA, NY) drives success
+-  Network connectivity correlates with regional success
+-  IPO activity predicts economic trends
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 ```python
 # Core Dependencies
@@ -200,7 +200,7 @@ See [`pyproject.toml`](pyproject.toml) for complete list.
 
 ---
 
-## 🎓 Academic Context
+## Academic Context
 
 ### Citation
 ```
@@ -225,7 +225,7 @@ HEC Lausanne, University of Lausanne.
 
 <div align="center">
 
-### 🚀 From Data to Decisions
+### From Data to Decisions
 
 *Advanced survival analysis bridging academic rigor with business applications*
 
@@ -238,7 +238,7 @@ HEC Lausanne, University of Lausanne.
 
 ---
 
-## 📧 Contact
+## Contact
 
 **Daniele Parini**  
 HEC Lausanne, University of Lausanne  
@@ -250,7 +250,7 @@ HEC Lausanne, University of Lausanne
 
 ---
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file.
 
