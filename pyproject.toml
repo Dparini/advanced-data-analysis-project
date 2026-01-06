@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "advanced-data-analysis-project"
+version = "0.1.0"
+description = "Comprehensive survival analysis framework to predict the probability and timing of exit events (IPO or acquisition) for VC-backed startups."
+requires-python = ">=3.12"
+dependencies = [
+    "folium>=0.20.0",
+    "graphviz>=0.21",
+    "jupyter>=1.1.1",
+    "kagglehub>=0.3.13",
+    "lifelines>=0.30.0",
+    "matplotlib>=3.10.8",
+    "missingno>=0.5.2",
+    "numpy>=2.4.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "requests>=2.32.5",
+    "scikit-learn>=1.7.2",
+    "scikit-survival>=0.26.0",
+    "scipy>=1.16.3",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.6",
+    "torch>=2.9.1",
+    "xgboost>=3.1.2",
+    "xgbse>=0.2.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "nbstripout>=0.8.2",
+    "ruff>=0.14.10",
+]
+
+[tool.ruff.format]
+docstring-code-format = false
+
+[tool.ruff.lint]
+# See https://docs.astral.sh/ruff/rules for full details of each ruleset.
+# Enable:  D: `pydocstyle`, PL: `pylint`, I: `isort`, W: `pycodestyle whitespace`
+#          NPY: `numpy`, FLY: `flynt`, RUF: `ruff`
+#          From flake8: "ARG", "SLF", "S", "BLE", "B", "A", "C4", "EM", "ICN",
+#                       "PIE", "Q", "RSE", "SIM", "TID"
+select = ["D", "PL", "I", "E", "W", "NPY", "FLY", "RUF",
+          "ARG", "SLF", "S", "BLE","B", "A", "C4", "EM", "ICN", "PIE", "Q", "RSE",
+          "SIM", "TID"]
+# Enable D417 (Missing argument description) on top of the NumPy convention.
+extend-select = ["D417"]
+# Ignore SIM108 (use ternary instead of if-else) as it can arguably obscure intent.
+# Ignore RUF002 (ambiguous characters) as it does not allow apostrophes in strings.
+ignore = ["SIM108", "RUF002"]
+
+# [tool.ruff.lint.pydocstyle]
+# # Use NumPy convention for checking docstrings
+# convention = "numpy"
+
+[tool.ruff.lint.per-file-ignores]
+"*/__init__.py" = [
+    "D104" # Allow missing docstring for module
+]
+"*.ipynb" = [
+    "I002",  # Missing required import (allows imports anywhere)
+]
