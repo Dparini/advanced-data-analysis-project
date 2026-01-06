@@ -108,8 +108,8 @@ jupyter notebook modeling.ipynb                # 3. Models
 
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
-| **Total Startups** | 15,305 | Final sample |
-| **IPO Events** | 126 (0.8%) | Primary success |
+| **Total Startups** | 15,304 | Final sample |
+| **IPO Events** | 125 (0.8%) | Primary success |
 | **M&A Events** | 1,513 (9.9%) | Secondary success |
 | **Failure Events** | 870 (5.7%) | Competing risk |
 | **Median Time-to-IPO** | 4.9 years | From first funding |
@@ -123,10 +123,10 @@ jupyter notebook modeling.ipynb                # 3. Models
 
 | Model | C-Index | Calibration |
 |-------|---------|-------------|
-| **Cox PH** | **0.746** | 0.048 |
-| **Random Survival Forest** | 0.723 | 0.051 |
-| **Competing Risks (IPO)** | 0.711 | - |
-| **Competing Risks (M&A)** | 0.699 | - |
+| **Cox PH** | **0.648** | 0.048 |
+| **Random Survival Forest** | 0.693 | 0.051 |
+| **Competing Risks (IPO)** | 0.764 | - |
+| **Competing Risks (M&A)** | 0.692 | - |
 
 </div>
 
@@ -143,9 +143,9 @@ jupyter notebook modeling.ipynb                # 3. Models
 ## Methodology
 
 ### 1. Data Integration
-- **Crunchbase**: 196K companies (1970-2013)
-- **Jay Ritter IPO**: 15,700 IPOs (1975-2025)
-- **Final Sample**: 15,305 USA startups
+- **Crunchbase**: 196,499 companies (1970-2013)
+- **Jay Ritter IPO**: 15,697 IPOs (1975-2025)
+- **Final Sample**: 15,304 USA startups
 
 ### 2. Feature Engineering
 ```python
@@ -176,7 +176,7 @@ jupyter notebook modeling.ipynb                # 3. Models
 
 ### For Entrepreneurs
 -  Log funding is strongest predictor
--  Each additional relationship reduces hazard by **18%**
+-  Strong network connectivity reduces failure hazard by **18%**
 -  Market timing matters for outcomes
 
 ### For Policymakers
