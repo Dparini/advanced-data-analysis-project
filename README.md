@@ -2,6 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="src/logo_white.jpg">
     <source media="(prefers-color-scheme: light)" srcset="src/logo_black.jpg">
+    <img alt="Logo del progetto" src="./src/logo_black.jpg">
   </picture>
 </div>
 
