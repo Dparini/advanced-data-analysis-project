@@ -231,7 +231,7 @@ HEC Lausanne, University of Lausanne.
 
 **Daniele Parini** · HEC Lausanne · 2025
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://https://github.com/Dparini/advanced-data-analysis-project)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Dparini/advanced-data-analysis-project)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/daniele-parini-852645259)
 
 </div>
