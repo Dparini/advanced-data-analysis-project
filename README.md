@@ -124,7 +124,8 @@ jupyter notebook modeling.ipynb                # 3. Models
 | Model | C-Index | Calibration |
 |-------|---------|-------------|
 | **Cox PH** | **0.648** | 0.048 |
-| **Random Survival Forest** | 0.693 | 0.051 |
+| **Random Survival Forest** | 0.686 | 0.051 |
+| **XGBSE** | **0.639** | - |
 | **Competing Risks (IPO)** | 0.764 | - |
 | **Competing Risks (M&A)** | 0.692 | - |
 
